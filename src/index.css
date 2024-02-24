@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body, html {
+  height: 100%;
+}
+.btn-primary {
+  border-color: #eff2f7 !important;
+  background-color: #2068e5 !important;
+  color: white !important;
+}
+.btn {
+  border: 1px solid #eff2f7 !important;
+  color: #29323d;
+}
+.custom-radio {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* IMAGE STYLES */
+.custom-radio + div {
+  cursor: pointer;
+}
+
+/* CHECKED STYLES */
+.custom-radio:checked + div {
+  border: 2px solid rgb(74, 123, 255);
+}
+/* BACKGROUND IMAGE STYLES */
+.bgImg {
+  /* The image used */
+  background-image: url("./assets/images/SignUpBg.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
